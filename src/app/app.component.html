@@ -1,0 +1,35 @@
+<div fxLayout="column" fxLayoutGap="10px">
+  <div fxLayout="row" fxLayoutAlign="start-center" fxLayoutGap="10px">
+    <div>First Number Range</div>
+    <input class="textBox" type="text" [(ngModel)]="firstNumFrom" />
+    <div>-</div>
+    <input class="textBox" type="text" [(ngModel)]="firstNumTo" />
+  </div>
+  <div fxLayout="row" fxLayoutAlign="start-center" fxLayoutGap="10px">
+    <div>Second Number Range</div>
+    <input class="textBox" type="text" [(ngModel)]="secondNumFrom" />
+    <div>-</div>
+    <input class="textBox" type="text" [(ngModel)]="secondNumTo" />
+  </div>
+  <div fxLayout="row" fxLayoutAlign="start-center" fxLayoutGap="10px">
+    <div>Lines</div>
+    <input class="textBox" type="text" [(ngModel)]="lines" />
+  </div>
+  <div fxLayout="row" fxLayoutAlign="start-center" fxLayoutGap="10px">
+    <div>Columns</div>
+    <select [(ngModel)]="columns">
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="start-center" fxLayoutGap="10px">
+    <div>Operator</div>
+    <select [(ngModel)]="operator">
+      <option value="plus">+</option>
+      <option value="minus">-</option>
+      <option value="divide">÷</option>
+      <option value="multiply">×</option>
+    </select>
+  </div>
+  <button class="button" (click)="download()">Generate</button>
+</div>
